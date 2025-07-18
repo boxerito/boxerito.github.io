@@ -1,0 +1,35 @@
+# Configuración para boxerito.github.io
+$schema: "http://json-schema.org/draft-07/schema#"
+title: RepoConfig
+description: Configuración Gemini Code Assist para sitio personal
+
+# Características generales
+have_fun: true  # Habilita comentarios creativos
+
+# Archivos a ignorar
+ignore_patterns:
+  - "*.pyc"
+  - "__pycache__/**"
+  - ".DS_Store"
+  - "*.log"
+  - ".vscode/**"
+  - ".idea/**"
+
+# Configuración de revisiones
+code_review:
+  disable: false
+  comment_severity_threshold: "MEDIUM"
+  
+  # Enfoque específico para tu proyecto
+  focus_areas:
+    - "python_best_practices"
+    - "web_performance"
+    - "security"
+    - "code_organization"
+
+# Configuración específica para Python
+python_settings:
+  follow_pep8: true
+  max_line_length: 88
+  prefer_f_strings: true
+  check_type_hints: true
